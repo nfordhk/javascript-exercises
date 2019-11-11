@@ -7,10 +7,21 @@
 *spec 2 - expect(removeFromArray([1, 2, 3, 4], 3, 2)).toEqual([1, 4]);
 */
 
-/* const removeFromArray = function() {
+function removeFromArray (...args) {
+     let argsArray = args[0]
+     let newArray = []
 
-}*/
+    return newArray; 
 
+}//end removeFromArray()
+
+console.log (removeFromArray([1, 2, 3, 4], 3, 2))
+module.exports = removeFromArray
+
+
+
+// Passes Spec1, not viable for Spec2
+/*
 function removeFromArray (array, value) {
 
     let findValueIndex = array.indexOf(value)
@@ -20,8 +31,13 @@ function removeFromArray (array, value) {
 }//end removeFromArray()
 
 console.log (removeFromArray([1,2,3,4],3))
-module.exports = removeFromArray
+*/
 
+//
+//
+//
+
+// Testing Solution, local defined variables 
 /*function removeFromArray () {
     
     let array = [1, 2, 3, 4]
