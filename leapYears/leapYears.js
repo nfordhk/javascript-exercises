@@ -20,7 +20,7 @@ function leapYears(years) {
     } 
 }
 
-console.log (leapYears(700))
+console.log (leapYears())
 
 module.exports = leapYears
 
