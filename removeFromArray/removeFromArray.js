@@ -11,19 +11,15 @@
 
 }*/
 
-let array = [1, 2, 3, 4]
-let value = 3
-
 function removeFromArray (array, value) {
-    //let array = [1, 2, 3, 4]
-    //let value = 3
+
     let findValueIndex = array.indexOf(value)
     array.splice(findValueIndex, 1)
 
     return array
 }//end removeFromArray()
 
-console.log (removeFromArray())
+console.log (removeFromArray([1,2,3,4],3))
 module.exports = removeFromArray
 
 /*function removeFromArray () {
