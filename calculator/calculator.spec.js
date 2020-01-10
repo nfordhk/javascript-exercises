@@ -61,7 +61,7 @@ describe('factorial', function() {
 		expect(calculator.factorial(0)).toEqual(1); // 0! = 1
 	});
 
-	xit('computes the factorial of 1', function() {
+	it('computes the factorial of 1', function() {
 		expect(calculator.factorial(1)).toEqual(1);
 	});
 
