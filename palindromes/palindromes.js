@@ -1,12 +1,13 @@
 const palindromes = function(string) {
-    const splitString = string.split('')
-    const reverseString = splitString.reverse() 
-    const joinString = reverseString.join('')
-    if (joinString === string) {
+    palinString = string.toLowerCase().replace(/[^A-Za-z]/g,'')
+    palinString.split('').reverse().join('')
+
+    if (palinString === palinString) {
         return true 
+    } else {
+        return false
     }
 }
-
-//palindromes("racecar!")
+//palindromes("Nicholas")
 
 module.exports = palindromes
