@@ -1,6 +1,6 @@
 // jasmine calculator.spec.js
 
-const calculator = require ('./calculator.js');
+const calculator = require ('./calculator_2020.js');
 
 describe('add', function() {
 	it('adds 0 and 0', function() {
