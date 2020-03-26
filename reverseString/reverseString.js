@@ -7,7 +7,7 @@ function reverseString (string) {
     const reverseString = splitString.reverse() 
     const joinString = reverseString.join('')
 
-    return joinString
+    return joinString   
 }
 
 

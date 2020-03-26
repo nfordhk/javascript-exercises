@@ -21,6 +21,6 @@ const caesar = function(string,indexShift) {
 }
 
 
-caesar('Hello, World!',5)
+caesar('Hello',5)
 
 module.exports = caesar
