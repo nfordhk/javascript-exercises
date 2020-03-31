@@ -13,6 +13,7 @@ Leave anything that doesn’t come between A-Z as it is.
 const caesar = function(string,indexShift) {
     let cipherString = '';
     for (let i = 0; i < string.length; i++){  //convert string to ascii characters
+        //check for regEx a-zA-Z
         const asciiNumber = (string[i].charCodeAt())
         cipherString = cipherString + String.fromCharCode(asciiNumber + indexShift)
     }
@@ -21,6 +22,6 @@ const caesar = function(string,indexShift) {
 }
 
 
-caesar('Hello',5)
+caesar('Hello World!',5)
 
 module.exports = caesar

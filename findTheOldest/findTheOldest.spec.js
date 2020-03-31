@@ -7,16 +7,19 @@ describe('findTheOldest', function() {
         name: 'Carly',
         yearOfBirth: 1942,
         yearOfDeath: 1970,
-      },
+        //age 28
+      },                     
       {
         name: 'Ray',
         yearOfBirth: 1962,
         yearOfDeath: 2011
+        //age 49
       },
       {
         name: 'Jane',
         yearOfBirth: 1912,
         yearOfDeath: 1941
+        //age 30
       },
     ]
     expect(findTheOldest(people).name).toEqual('Ray');
