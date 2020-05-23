@@ -1,24 +1,13 @@
-/*function repeatString() {
-    let randomString = "hey"
-    return randomString.repeat(3)
-}
-  console.log (repeatString())*/
-
-  function repeatString(word, times) {
-    let randomString = ''
-
-    //returns ERROR with negative numbers
-    if (times < 0) {
+function repeatString(str, value) {
+    let repeatString = ''
+    if (value >= 0){
+        return repeatString = str.repeat(value)
+    } else {
         return 'ERROR'
     }
 
-    //repeats the string
-    for (i = 0; i < times; i++) {
-        //randomString = randomString + word
-        randomString += word
-    }
-    return randomString
-    
-} //end repeatString
+}
 
-  module.exports = repeatString
+module.exports = repeatString
+
+repeatString('hey',3)

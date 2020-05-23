@@ -6,23 +6,24 @@
 //Spec5 (incomplete)- expect(sumAll(10, "90")).toEqual('ERROR');
 //Spec6 (completed) - expect(sumAll(10, [90, 1])).toEqual('ERROR');
 
-//Sn=n/2(a1+an)
+//consider x = n+1 * (n/2)
 
-function sumAll(num1, num2){
-    let totalSum = 0;
-    if (typeof num1 != 'number' || typeof num2 != 'number'){
+function sumAll (num1, num2) {
+    if (num1 < 0 || num2 < 0 ) {
         return 'ERROR'
-    } else if (num1 < 0 || num2 < 0) {
+    } else if (isNaN(num1) || (isNaN(num2))) {
         return 'ERROR'
+    } else if (typeof num1 == "string" || typeof num2 == "string") {
+        return 'ERROR'
+    } else if (num2 < num1) {
+        const finalSum = ((num1 + 1) * (num1 / 2))
+        return finalSum
     } else if (num1 < num2) {
-        return totalSum = (num2/2)*(num1+num2)
-    } else if (num1 > num2) {
-        return totalSum = (num1/2)*(num2+num1)
-    } else {
-        return 'ERROR'
-    }
+        const finalSum = ((num2 + 1) * (num2 / 2))
+        return finalSum
+    } 
 }
 
-sumAll(1, 4)
+console.log (sumAll())
 
 module.exports = sumAll

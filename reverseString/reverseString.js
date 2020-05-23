@@ -1,14 +1,7 @@
-/* const reverseString = function() {
-
-}*/
-
-function reverseString (string) {
-    const splitString = string.split('')
-    const reverseString = splitString.reverse() 
-    const joinString = reverseString.join('')
-
-    return joinString   
+function reverseString(str) {
+    return (str.split('').reverse().join(''))
 }
 
-
 module.exports = reverseString
+
+reverseString('hello')
