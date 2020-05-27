@@ -7,9 +7,15 @@
 //spec6 - expect(leapYears(700)).toEqual(false);  
 
 function leapYears(years) {
-
+    if (years % 4 == 0 && years % 100 !== 0) {
+        return true
+    } else if (years % 4 == 0 && years % 400 == 0) {
+        return true
+    } else {
+        return false
+    }
 }
-console.log (leapYears())
+console.log (leapYears(700))
 
 module.exports = leapYears
 

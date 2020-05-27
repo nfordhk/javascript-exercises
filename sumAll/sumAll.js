@@ -1,13 +1,4 @@
-//Testing jasmine sumAll.spec.js
-//Spec1 (completed) - expect(sumAll(1, 4)).toEqual(10); 
-//Spec2 (completed) - expect(sumAll(1, 4000)).toEqual(8002000);
-//Spec3 (completed) - expect(sumAll(123, 1)).toEqual(7626);
-//Spec4 (completed) - expect(sumAll(-10, 4)).toEqual('ERROR');
-//Spec5 (incomplete)- expect(sumAll(10, "90")).toEqual('ERROR');
-//Spec6 (completed) - expect(sumAll(10, [90, 1])).toEqual('ERROR');
-
-//Sn=n/2(a1+an)
-
+//Solution 1, using Gauss formula 
 function sumAll(num1, num2){
     let totalSum = 0;
     if (typeof num1 != 'number' || typeof num2 != 'number'){
@@ -22,6 +13,16 @@ function sumAll(num1, num2){
         return 'ERROR'
     }
 }
+
+//Solution 2, for loop, incrementing min
+/*
+function sumAll (min,max){
+    let totalSum = 0;
+    for (let i = min; i < max + 1; i++) {
+      totalSum = totalSum + i;
+    }
+    console.log (totalSum) ;
+}*/
 
 sumAll(1, 4)
 
